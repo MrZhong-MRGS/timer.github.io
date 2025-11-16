@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Countdown Timer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="layout">
+
+    <!-- LEFT PANEL -->
+    <div id="left-panel">
+        <h2>Time Blocks</h2>
+        <div id="half-hour-blocks"></div>
+    </div>
+
+    <!-- DRAGGABLE RESIZER -->
+    <div id="drag-bar"></div>
+
+    <!-- RIGHT PANEL -->
+    <div id="right-panel">
+        <h1 id="exam-title">Exam</h1>
+        <input id="exam-entry" placeholder="Enter Exam Name">
+
+        <div id="datetime">
+            <div id="date-label"></div>
+            <div id="time-label"></div>
+        </div>
+
+        <h1 id="TR">Time Remaining:</h1>
+        <h1 id="remaining-label"></h1>
+
+        <div id="duration-section">
+            <label>Enter duration (minutes):</label>
+            <input type="number" id="duration-input" min="1">
+        </div>
+
+        <div id="controls">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn" disabled>Pause</button>
+            <button id="resume-btn" disabled>Resume</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+
+        <div id="message-label"></div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
